@@ -30,13 +30,14 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:switch_spdt
+LIBS:NokiaLCD-cache
 EELAYER 27 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title ""
-Date "3 apr 2015"
+Date "4 apr 2015"
 Rev ""
 Comp ""
 Comment1 ""
@@ -268,15 +269,11 @@ Wire Wire Line
 Wire Wire Line
 	5950 2450 5850 2450
 Wire Wire Line
-	5850 2450 5850 4850
-Wire Wire Line
-	5850 4850 4150 4850
+	5850 2450 5850 4750
 Wire Wire Line
 	5950 2550 5900 2550
 Wire Wire Line
-	5900 2550 5900 4750
-Wire Wire Line
-	5900 4750 4150 4750
+	5900 2550 5900 4850
 Wire Wire Line
 	6750 2650 7000 2650
 Wire Wire Line
@@ -304,4 +301,8 @@ Wire Wire Line
 	4100 5850 4100 5950
 Wire Wire Line
 	7050 5550 3950 5550
+Wire Wire Line
+	5900 4850 4150 4850
+Wire Wire Line
+	5850 4750 4150 4750
 $EndSCHEMATC
