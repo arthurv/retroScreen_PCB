@@ -30,6 +30,7 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:switch_spdt
+LIBS:IC_raspberry
 LIBS:NokiaLCD-cache
 EELAYER 27 0
 EELAYER END
@@ -37,7 +38,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title ""
-Date "4 apr 2015"
+Date "21 apr 2015"
 Rev ""
 Comp ""
 Comment1 ""
@@ -45,17 +46,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L CONN_13X2 P4
-U 1 1 551EF9C1
-P 6350 2950
-F 0 "P4" H 6350 3650 60  0000 C CNN
-F 1 "CONN_13X2" V 6350 2950 50  0000 C CNN
-F 2 "" H 6350 2950 60  0000 C CNN
-F 3 "" H 6350 2950 60  0000 C CNN
-	1    6350 2950
-	1    0    0    -1  
-$EndComp
 $Comp
 L CONN_8 P2
 U 1 1 551EF9F5
@@ -163,17 +153,6 @@ F 3 "" H 4300 3400 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3.3V #PWR7
-U 1 1 551F07A0
-P 5450 3350
-F 0 "#PWR7" H 5450 3310 30  0001 C CNN
-F 1 "+3.3V" H 5450 3460 30  0000 C CNN
-F 2 "" H 5450 3350 60  0000 C CNN
-F 3 "" H 5450 3350 60  0000 C CNN
-	1    5450 3350
-	1    0    0    -1  
-$EndComp
-$Comp
 L +3.3V #PWR8
 U 1 1 551F07AF
 P 5700 2350
@@ -210,10 +189,6 @@ Wire Wire Line
 	4150 3850 4300 3850
 Wire Wire Line
 	4300 3850 4300 3400
-Wire Wire Line
-	5400 3650 5450 3650
-Wire Wire Line
-	5450 3650 5450 3350
 Wire Wire Line
 	5950 2350 5700 2350
 Wire Wire Line
@@ -305,4 +280,45 @@ Wire Wire Line
 	5900 4850 4150 4850
 Wire Wire Line
 	5850 4750 4150 4750
+$Comp
+L +5V #PWR?
+U 1 1 5536AC17
+P 7150 2250
+F 0 "#PWR?" H 7150 2340 20  0001 C CNN
+F 1 "+5V" H 7150 2340 30  0000 C CNN
+F 2 "" H 7150 2250 60  0000 C CNN
+F 3 "" H 7150 2250 60  0000 C CNN
+	1    7150 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 2350 7150 2350
+Wire Wire Line
+	7150 2350 7150 2250
+$Comp
+L +5V #PWR?
+U 1 1 5536ACE0
+P 5450 3450
+F 0 "#PWR?" H 5450 3540 20  0001 C CNN
+F 1 "+5V" H 5450 3540 30  0000 C CNN
+F 2 "" H 5450 3450 60  0000 C CNN
+F 3 "" H 5450 3450 60  0000 C CNN
+	1    5450 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 3450 5450 3650
+Wire Wire Line
+	5450 3650 5400 3650
+$Comp
+L RASPBERRY_IO RPi?
+U 1 1 5536ADF2
+P 6350 2950
+F 0 "RPi?" H 6350 3650 60  0000 C CNN
+F 1 "RASPBERRY_IO" V 6350 2950 50  0000 C CNN
+F 2 "" H 6350 2950 60  0000 C CNN
+F 3 "" H 6350 2950 60  0000 C CNN
+	1    6350 2950
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

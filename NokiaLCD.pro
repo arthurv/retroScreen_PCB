@@ -1,6 +1,6 @@
-update=Fri 03 Apr 2015 23:19:48 BST
+update=Tue 21 Apr 2015 21:08:53 BST
 version=1
-last_client=cvpcb
+last_client=eeschema
 [pcbnew]
 version=1
 LastNetListRead=
@@ -41,6 +41,11 @@ LibName17=kicad-guan/guan
 LibDir=
 [general]
 version=1
+[cvpcb]
+version=1
+NetIExt=net
+[cvpcb/libraries]
+EquName1=devcms
 [eeschema]
 version=1
 LibDir=
@@ -81,8 +86,4 @@ LibName28=atmel
 LibName29=contrib
 LibName30=valves
 LibName31=switch_spdt
-[cvpcb]
-version=1
-NetIExt=net
-[cvpcb/libraries]
-EquName1=devcms
+LibName32=IC_raspberry
